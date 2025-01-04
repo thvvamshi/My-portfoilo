@@ -3,28 +3,23 @@
     padding: 0%;
     box-sizing: border-box;
 }
-
 html {
     scroll-behavior: smooth;
 }
-
 .massbody {
     color: white;
     background-color: black;
     position: absolute;
 }
-
 .navbar-section {
     padding-left: 20px;
     width: 92vw;
     margin: 0 auto;
 }
-
 .anchor {
     padding-left: 10px;
     margin-left: auto;
 }
-
 .itemnav {
     font-weight: 500;
     text-transform: uppercase;
