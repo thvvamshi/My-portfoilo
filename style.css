@@ -1,0 +1,762 @@
+/* for style */
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.massbody {
+    color: white;
+    background-color: black;
+    position: absolute;
+}
+
+.navbar-section {
+    padding-left: 20px;
+    width: 92vw;
+    margin: 0 auto;
+}
+
+.anchor {
+    padding-left: 10px;
+    margin-left: auto;
+}
+
+.itemnav {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 12px;
+    color: white;
+    margin: 2px 2px;
+}
+
+.itemnav:hover {
+    color: goldenrod;
+    border-bottom: 2px solid rgb(161, 142, 35);
+}
+
+.logo1 {
+    height: 31px;
+}
+
+.leftdown {
+    margin-left: 40px;
+}
+
+.bodysection {
+    background: url("https://res.cloudinary.com/dedsrw0qv/image/upload/v1734858565/profile_pic-removebg-preview_2_voie2m.png");
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: 650px;
+}
+
+.box-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 200px;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.2;
+    height: 90vh;
+
+}
+
+h1 {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 53px;
+    line-height: 1.2;
+}
+
+.container-bodybtn {
+    display: flex;
+    flex-direction: row;
+}
+
+.bodybtn {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.bodybtn:hover {
+    border: 2px solid rgb(66, 66, 193);
+}
+
+.aboutme-container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.aboutme1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+    flex-wrap: wrap;
+}
+
+.about-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image2 {
+    height: 50vh;
+    width: 25vw;
+    margin-top: 3rem;
+    margin-left: 4rem;
+}
+
+.about-right {
+    width: 49vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-header {
+    text-align: center;
+    font-style: normal;
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin-right: 3rem;
+    margin-top: 30px;
+
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.details-info {
+    width: 80%;
+    margin-top: 1.5rem;
+    margin-left: -2.5rem;
+}
+
+.inputdetais {
+    list-style: none;
+    margin-bottom: 10px;
+    margin-top: 2rem;
+    margin-left: -2.5rem;
+}
+
+.tablegrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+li {
+    margin: 18px;
+}
+
+.span10 {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.span2 {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 450;
+    font-style: normal;
+}
+
+.resume-container {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.part {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 120px;
+}
+
+.headh1 {
+    letter-spacing: 3px;
+}
+
+.para {
+    margin: 25px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    margin-bottom: 50px;
+    max-width: 70%;
+
+}
+
+.resume-grid {
+    margin: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.resumecard {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(33, 30, 30);
+    border-radius: 10px;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.resumeyear {
+    color: goldenrod;
+    font-size: 20px;
+    font-weight: 750;
+}
+
+.resumecv {
+    margin: 30px;
+    padding: 30px;
+    text-align: center;
+}
+
+.resumebtn {
+    border: 2px solid goldenrod;
+    background-color: goldenrod;
+    border-radius: 40px;
+    padding: 1.5rem;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.service-container {
+    padding: 20px;
+}
+
+.service-grid {
+    max-width: 85vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.servicescard {
+    background-color: rgb(30, 28, 28);
+    border: 2px solid rgb(21, 21, 21);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    height: 37vh;
+    transition: all 1ms linear 0s;
+    overflow: hidden;
+}
+
+.servicescard:hover {
+    background-color: rgb(201, 157, 46);
+    transform: scale(1.05);
+
+}
+
+.serimage {
+    height: 82px;
+    width: 82x;
+}
+
+.serheader {
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    font-style: normal;
+    line-height: 1.3;
+    text-decoration: none;
+}
+
+.serpar {
+    color: goldenrod;
+}
+
+.blog-grid {
+    display: grid;
+    width: 88vw;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+}
+
+.blogcard {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+}
+
+.blogimg {
+    height: 350px;
+    width: 350px;
+    overflow: hidden;
+}
+
+.date {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 30px;
+}
+
+.blogpara {
+    color: goldenrod;
+    font-size: 15px;
+    font: bold;
+    text-transform: uppercase;
+}
+
+.bloghead {
+    text-decoration: none;
+    color: white;
+}
+
+.bloghead:hover {
+    color: goldenrod;
+}
+
+.blogpara2 {
+    font-weight: lighter;
+}
+
+.freelences-section {
+    margin-top: 170px;
+    height: 110vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.freecontainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://themewagon.github.io/clark/images/bg_1.jpg);
+}
+
+.freebox {
+    text-align: center;
+    width: 800px;
+}
+
+.freepara {
+    font-size: 53px;
+    font-weight: 850;
+}
+
+.freebtn {
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: goldenrod;
+    height: 3.9rem;
+    width: 12.6rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.contact-container {
+    margin-top: 100px;
+}
+
+.contact-grid {
+    width: 90vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.contactcard {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contactimg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    height: 100px;
+    width: 100px;
+    background-color: rgba(44, 43, 43, 0.992);
+    border-radius: 50%;
+    gap: 1rem;
+}
+
+.contacttext {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.sendmsg-container {
+    margin: 30px;
+}
+
+.boxshodow {
+    background-color: rgb(170, 200, 212);
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.boxshodow:hover {
+    box-shadow: rgba(183, 195, 108, 0.964) 0px 19px 38px,
+        rgba(219, 223, 97, 0.997) 0px 15px 12px
+}
+
+.sendbtn {
+    border-radius: 30px;
+    font-size: 10px;
+    font-weight: 600;
+    background-color: goldenrod;
+    height: 3rem;
+    width: 9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.send-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.links-section {
+    margin-top: 70px;
+}
+
+.links-container {
+    width: 86vw;
+    margin: 0 auto;
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.gridcard {
+    padding: 10px 10px;
+    text-align: left;
+}
+
+.thirdgrid {
+    padding-left: 0%;
+}
+
+.foothead {
+    padding-left: 60px;
+}
+
+.list {
+    text-decoration: none;
+    text-align: left;
+    font-size: 16px;
+    font-style: normal;
+    font: bold;
+    color: rgb(243, 236, 236);
+}
+
+.span1 {
+    font-size: 25px;
+    height: 2px;
+}
+
+li {
+    list-style: none;
+    padding: 0;
+}
+
+.linkpara {
+    margin-top: 30px;
+}
+
+.mailstyle {
+    text-decoration: none;
+    color: white;
+}
+
+.footerpara {
+    margin-top: 40px;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Responsive design for large screen */
+@media (max-width: 1200px) {
+    .menuicon {
+        background-color: white;
+        opacity: 0.8;
+    }
+
+    .navbar-section,
+    .aboutme1,
+    .resume-grid,
+    .service-grid,
+    .blog-grid,
+    .contact-grid,
+    .links-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .box-left,
+    .send-left,
+    .send-right {
+        padding: 20px;
+    }
+
+    .image2 {
+        height: 450px;
+        width: 450px;
+        margin-top: -1rem;
+    }
+
+    .leftdown {
+        margin-left: 100px;
+    }
+    .freecontainer {
+        background-image: url(https://themewagon.github.io/clark/images/bg_1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+}
+
+/* Responsive design for tablets screen */
+@media (max-width: 768px) {
+    body{
+        font-size: 16px;
+    }
+    .body-section {
+        margin-top: 90px;
+    }
+
+    .menuicon {
+        background-color: white;
+        opacity: 0.8;
+    }
+
+    .body-section {
+        text-align: center;
+        align-items: center;
+    }
+
+    .bodysection {
+        background: url("https://res.cloudinary.com/dedsrw0qv/image/upload/v1728713969/profile_pic-removebg-preview_jt73te.png");
+        background-repeat: no-repeat;
+        background-position: 160px;
+    }
+
+    .box-left {
+        text-align: center;
+
+        div {
+            margin-top: 330px;
+
+            p {
+                font-size: 17px;
+            }
+
+            h1,
+            span {
+                font-size: 45px;
+            }
+
+            h5 {
+                font-size: 21px;
+            }
+
+            button {
+                font-size: 10px;
+            }
+
+            button:hover {
+                background-color: rgb(219, 182, 89);
+                border: 2px solid rgb(42, 29, 29);
+                color: black;
+            }
+        }
+    }
+
+    .box-right {
+        display: none;
+    }
+
+
+    .aboutme-container {
+        margin-top: 150px;
+    }
+
+    .details-info p {
+        font-size: 14px;
+        .span10 {
+            font-size: 16px;
+        }
+        .span2 {
+            font-size: 10px;
+        }
+    }
+
+    .image2 {
+        height: 270px;
+        width: 250px;
+        margin-top: 2.5rem;
+    }
+    .blog-grid{
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar-section,
+    .resume-grid,
+    .service-grid,
+    .blog-grid,
+    .links-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .links-grid{
+       display: none;
+    }
+
+
+
+    .box-left {
+        text-align: center;
+    }
+}
+
+/* Responsive design for mobile screen */
+@media (max-width: 370px) {
+    body{
+        font-size: 14px;
+    }
+    .menuicon {
+        background-color: white;
+        opacity: 0.8;
+    }
+
+    .body-section {
+        margin-top: 110px;
+    }
+    .bodysection {
+        background: url("https://res.cloudinary.com/dedsrw0qv/image/upload/v1728713969/profile_pic-removebg-preview_jt73te.png");
+        background-repeat: no-repeat;
+        background-position: 110px;
+    }
+
+    .box-left {
+        text-align: center;
+
+        div {
+            margin-top: 300px;
+
+            p {
+                font-size: 25px;
+            }
+
+            h1,
+            span {
+                font-size: 55px;
+            }
+
+            h5 {
+                font-size: 30px;
+            }
+
+            button {
+                font-size: 18px;
+            }
+
+            button:hover {
+                background-color: rgb(219, 182, 89);
+                border: 2px solid rgb(42, 29, 29);
+                color: black;
+            }
+        }
+    }
+
+    .box-right {
+        display: none;
+    }
+    .aboutme-container {
+        margin-top:200px;
+        grid-template-columns: 1fr;
+    }
+
+    .aboutme1 {
+        display: none;
+    }
+
+    .about-right {
+        text-align: center;
+        width: 100%;
+    }
+
+    .freecontainer {
+        background-image: url(https://themewagon.github.io/clark/images/bg_1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .freepara {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .freebtn {
+        border-radius: 50px;
+        font-size: 10px;
+        font-weight: 800;
+        background-color: goldenrod;
+        height: 3rem;
+        width: 7rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+    .contact-grid,.resume-grid,.service-grid {
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
