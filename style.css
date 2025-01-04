@@ -54,6 +54,7 @@ html {
     background-repeat: no-repeat;
     background-size: 500px;
     background-position: 650px;
+    height: 90vh;
 }
 
 .box-left {
@@ -563,7 +564,7 @@ li {
 }
 
 /* Responsive design for tablets screen */
-@media (max-width: 768px) {
+@media (min-width:460px) and (max-width: 768px) {
     body{
         font-size: 16px;
     }
@@ -666,7 +667,7 @@ li {
 }
 
 /* Responsive design for mobile screen */
-@media (max-width: 370px) {
+@media only screen and (max-width: 450px) {
     body{
         font-size: 14px;
     }
@@ -676,18 +677,18 @@ li {
     }
 
     .body-section {
-        margin-top: 25px;
-    }
-    .bodysection {
-        background: url("https://res.cloudinary.com/dedsrw0qv/image/upload/v1735998040/profile_pic-removebg-preview_2_asxncd.png");
+        margin-top: 100px;
+        max-width: 100%;
+        max-height: max-content;
+        }
+    .body-section {
+        background:url("https://res.cloudinary.com/dedsrw0qv/image/upload/v1734858565/profile_pic-removebg-preview_2_voie2m.png");
+        background-position: 1px;
+        background-size: 700px;
         background-repeat: no-repeat;
-        background-position: 225px;
-        background-size: cover;
     }
-
     .box-left {
         text-align: center;
-
         div {
             margin-top: 300px;
 
@@ -731,18 +732,25 @@ li {
     .about-right {
         text-align: center;
         width: 100%;
+
+    }
+    .image2{
+        display: none;
+    }
+    .freelences-section{
+        display: none;
     }
 
-    .freecontainer {
+    /* .freecontainer {
         background-image: url(https://themewagon.github.io/clark/images/bg_1.jpg);
         background-repeat: no-repeat;
         background-position: center;
 
-    }
+    } */
 
     .freepara {
         font-size: 40px;
-        font-weight: 600;
+        font-weight: 600;;
     }
 
     .freebtn {
@@ -760,4 +768,16 @@ li {
         justify-content: center;
         grid-template-columns: repeat(2, 1fr);
     }
+    .links-grid{
+        display: none;
+     }
+    .navbar-section,
+    .resume-grid,
+    .service-grid,
+    .blog-grid,
+    .links-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+ 
 }
