@@ -676,12 +676,13 @@ li {
     }
 
     .body-section {
-        margin-top: 110px;
+        margin-top: 25px;
     }
     .bodysection {
-        background: url("https://res.cloudinary.com/dedsrw0qv/image/upload/v1728713969/profile_pic-removebg-preview_jt73te.png");
+        background: url("https://res.cloudinary.com/dedsrw0qv/image/upload/v1735998040/profile_pic-removebg-preview_2_asxncd.png");
         background-repeat: no-repeat;
-        background-position: 110px;
+        background-position: 225px;
+        background-size: cover;
     }
 
     .box-left {
@@ -716,7 +717,7 @@ li {
     }
 
     .box-right {
-        display: none;
+        display: none ;
     }
     .aboutme-container {
         margin-top:200px;
