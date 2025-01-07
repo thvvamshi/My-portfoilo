@@ -1,10 +1,9 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>My Portfilo</title>
+  <title>BODA VAMSHI KUMAR</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -14,56 +13,35 @@
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
-
 </head>
 
 <body class="massbody">
-  <nav>
-    <div class="navbar-section">
-      <nav class="navbar navbar-expand-lg ">
-        <div class="container navcon">
-          <a class="navbar-brand logo" href="#">
-            <h2 style="color: goldenrod;font-weight: 700; font-size: 37px;margin-top: 20px;">thv</h2>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon menuicon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav anchor">
-              <li class="nav-item">
-                <a class="nav-link itemnav " href="#Home" id="home1">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link itemnav" href="#Aboutme">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link itemnav" href="#resume">Resume</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link  itemnav" href="#service">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link  itemnav" href="#skills">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link  itemnav" href="#myblog">My Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link  itemnav" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+  <!-- nav section  -->
+  <div class="header">
+    <div class="container">
+      <nav>
+        <a class="anchor" href="...">thv</a>
+        <ul id ="sidemenu">
+          <li><a href="#home" id="Home1">Home</a></li>
+          <li><a  href="#Aboutme">Aboutme</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#myblog">My blogs</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu ()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu ()"></i>
       </nav>
     </div>
-  </nav>
+  </div>
+  <!-- main body section  -->
   <main>
     <div class="body-section">
       <div id="Home" class=" bodysection">
@@ -72,17 +50,15 @@
             <p style="color: goldenrod; letter-spacing: 8px; text-transform: uppercase;">HELLO!</p>
             <h1>I'm <span style="color: goldenrod;">Boda</span></h1>
             <h1 style="color: goldenrod;">Vamshi Kumar</h1>
-            <h5>A Freelence <span  style="color: rgb(224, 181, 70); font-weight: 700; font-size: 25px;"
-                id="element"></span></h5>
-                <br><br>
-            <span><a href="#"> <button type="button" class="btn btn-outline-warning bodybtn">hire me</button>
-              </a></span> &nbsp; &nbsp; &nbsp;
-            <span><a href="#"> <button type="button" class="btn btn-outline-warning bodybtn">my works</button>
-              </a></span>
+            <h5>A Freelence <span  style="color: rgb(224, 181, 70); font-weight: 700; font-size: 25px;"id="element"></span></h5>
+              <br><br>
+            <span><a href="https://www.linkedin.com/in/bodavamshikumar"> <button type="button" class="btn btn-outline-warning bodybtn frist">linkedin</button></a></span> &nbsp;&nbsp;&nbsp;
+            <span><a href="https://github.com/thvvamshi"> <button type="button" class="btn btn-outline-warning bodybtn">my works</button></a></span>
           </div>
         </div>
       </div>
     </div>
+    <!-- aboutme section  -->
     <div id="Aboutme" class="Aboutme-section">
       <div class="aboutme-container">
         <div class="row aboutme1">
@@ -132,6 +108,7 @@
         </div>
       </div>
     </div>
+    <!-- resume section  -->
     <div id="resume" class="resume-section">
       <div class="resume-container">
         <div class="part">
@@ -190,6 +167,7 @@
         </a>
       </div>
     </div>
+     <!-- service section  -->
     <div id="service" class="service-section">
       <div class="service-container">
         <div class="part">
@@ -254,6 +232,7 @@
         </div>
       </div>
     </div>
+     <!-- skils section  -->
     <div id="skills" class="skill-section">
       <div class="skill-container">
         <div class="part">
@@ -266,7 +245,7 @@
           <div style="display: grid; gap: 32px; grid-template-columns: repeat(2, 1fr);">
             <div>
               <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
-                <span style="font-size: 20px;">HTML5</span>
+                <span style="font-size: 20px;">FRONTEND</span>&nbsp;&nbsp;&nbsp;
                 <span style="font-size: 20px;">95%</span>
               </div>
               <div style="height: 10px; background-color: #333; border-radius: 2px; overflow: hidden;">
@@ -277,18 +256,18 @@
 
             <div>
               <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
-                <span style="font-size: 20px;">CSS3</span>
-                <span style="font-size: 20px;">90%</span>
+                <span style="font-size: 20px;">BACKEND</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span style="font-size: 20px;">80%</span>
               </div>
               <div style="height: 10px; background-color: #333; border-radius: 2px; overflow: hidden;">
-                <div style="width: 90%; height: 100%; background-color: #FFA500; border-radius: 8px;" role="progressbar"
+                <div style="width: 80%; height: 100%; background-color: #FFA500; border-radius: 8px;" role="progressbar"
                   aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="jQuery skill level"></div>
               </div>
             </div>
 
             <div>
               <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
-                <span style="font-size: 20px;">JAVA SCRIPT</span>
+                <span style="font-size: 20px;">MANGODB</span>
                 <span style="font-size: 20px;">85%</span>
               </div>
               <div style="height: 10px; background-color: #333; border-radius: 2px; overflow: hidden;">
@@ -299,7 +278,7 @@
 
             <div>
               <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
-                <span style="font-size: 20px;">SQL</span>
+                <span style="font-size: 20px;">UI/UX</span>
                 <span style="font-size: 20px;">90%</span>
               </div>
               <div style="height: 10px; background-color: #333; border-radius:2px; overflow: hidden;">
@@ -333,6 +312,7 @@
         </div>
       </div>
     </div>
+     <!-- myblogs section  -->
     <div id="myblog" class="myblog-section">
       <div class="blog-container">
         <div class="part">
@@ -435,18 +415,20 @@
         </div>
       </div>
     </div>
+     <!-- freelences section  -->
     <div class="freelences-section">
       <div class="freecontainer">
         <div class="freebox">
           <p class="freepara">I'm <span style="color: goldenrod;">Available</span> for freelancing</p>
           <p style="font-weight: lighter; font-size:24px;">I am available for freelance projects, ready to bring your
             ideas to life with creativity and professionalism.</p>
-          <a href="..">
+          <a href="https://www.linkedin.com/in/bodavamshikumar">
             <button class="freebtn">hire me</button>
           </a>
         </div>
       </div>
     </div>
+     <!-- contactme section  -->
     <div id="contact" class="contact-section">
       <div class="contact-container">
         <div class="part">
@@ -464,48 +446,48 @@
             </a>
             <div class="contacttext">
               <span
-                style="text-transform: uppercase;font-style: normal;font-size: 18px;font-weight: 500;">address</span>
-              <br>
+                style="text-transform: uppercase;font-style: normal;font-size: 18px;font-weight: 600;">address</span>
               <br>
               <span style="font-weight: 370; font-size: 16px;">
-                <p>2-205/2
-                  Hanumkonda,Warangal,telangana</p>
+                <p>Warangal,India</p>
               </span>
             </div>
           </div>
           <!-- card--2 -->
           <div class="contactcard">
-            <a class="contactimg" href="https://maps.app.goo.gl/f9QwV4eiRtRwQyEg6">
+            <a class="contactimg" href="tel:+916303625159">
               <div>
                 <img src="https://cdn-icons-png.flaticon.com/128/4440/4440575.png" alt="" height="55px" width="55px">
               </div>
             </a>
+            <a style="text-decoration: none;" href="tel:+916303625159">
             <div class="contacttext">
-              <span style="text-transform: uppercase;font-style: normal;font-size: 18px;font-weight: 500;">contact
+              <span style="text-transform: uppercase;font-style: normal;font-size: 18px;font-weight: 600;">contact
                 number</span>
-              <br>
               <br>
               <span style="font-weight: 370; font-size: 16px;">
                 <p> +91 6303625150</p>
               </span>
             </div>
+            </a>
           </div>
           <!-- card--3 -->
           <div class="contactcard">
-            <a class="contactimg" href="https://mail.google.com/mail/u/0/#inbox?compose=new">
+            <a class="contactimg" href="mailto:bodavamshikumar@gmail.com">
               <div>
                 <img src="https://cdn-icons-png.flaticon.com/128/873/873360.png" alt="" height="45px" width="45px">
               </div>
             </a>
+            <a style="text-decoration: none;" href="mailto:bodavamshikumar@gmail.com">
             <div class="contacttext">
-              <span style="text-transform: uppercase;font-style: normal;font-size: 18px;font-weight: 500;">email
+              <span style="text-transform: uppercase;font-style: normal;font-size: 18px;font-weight: 600;">email
                 address</span>
-              <br>
               <br>
               <span style="font-weight:370; font-size: 16px;">
                 <p>bodavamshikumar@gmail.com</p>
               </span>
             </div>
+            </a>
           </div>
           <!-- card--4 -->
           <div class="contactcard">
@@ -516,8 +498,7 @@
             </a>
             <div class="contacttext">
               <span
-                style="text-transform: uppercase;font-style: normal;font-size: 18px;font-weight: 500;">linkedin</span>
-              <br>
+                style="text-transform: uppercase;font-style: normal;font-size: 18px;font-weight: 600;">linkedin</span>
               <br>
               <span style="font-weight: 370; font-size: 16px;">
                 <p>@bodavamshikumar</p>
@@ -529,25 +510,29 @@
           <div class="sendmsg-container">
             <div class="send-right">
               <div class="boxshodow">
-                <h2 style="color:rgb(197, 44, 44); text-align: center; margin-bottom:30px; font-weight: 700; font-size: 37px;" >Get In <span style="color: rgb(216, 164, 33);">Touch</span></h2>
-                <label for="yourname"></label>
-                <input style="width: 500px; height: 30px; border-radius: 5px;" type="text" id="yourname"
-                  placeholder="Your Name" required> <br> <br>
-                <input style="width: 500px; height: 30px; border-radius: 5px;" type="text" id="youremail"
-                  placeholder="Your Email" required> <br> <br>
-                <input style="width: 500px; height: 30px; border-radius: 5px;" type="text" id="subject"
-                  placeholder="Subject" required> <br> <br>
-                <textarea style="border-radius: 5px;" name="textarea" id="textarea" placeholder="Message" cols="66"
-                  rows="4"></textarea> <br> <br> <br>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                <h2 style="color:black; text-align: center; margin-bottom:30px; font-weight: 700; font-size: 37px;" >Get In <span style="color: rgb(216, 164, 33);">Touch</span></h2>
+                <input type="hidden" name="access_key" value="926d3ac0-95c9-4a79-9ccd-33da9b3ff275">
+                <input style="width: 580px; height: 30px; border-radius: 5px;" type="text"  name="name"  placeholder="  Your Name" required> 
+                <br> <br>
+                <input style="width: 580px; height: 30px; border-radius: 5px;" type="email" name="email"  placeholder="  Your Email" required>
+                 <br> <br>
+                <input style="width: 580px; height: 30px; border-radius: 5px;" type="text" name="subject"  placeholder="  Subject" required>
+                 <br> <br>
+                <textarea style="border-radius: 5px;" name="Message" id="textarea" placeholder="  Message" cols="66"
+                  rows="4"></textarea>
+                   <br> <br> <br>
                 <a class="freebtn" href="...">
-                  <button class="freebtn sendbtn">Send Message</button>
+                  <button type="submit" class="freebtn sendbtn">submit <i class="fa-solid fa-arrow-right" ></i></button>
                 </a>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+     <!-- links section  -->
     <div class="links-section">
       <div class="links-container">
         <div class="links-grid">
@@ -623,23 +608,67 @@
         </div>
       </div>
     </div>
+     <!-- find me section  -->
+      <div class="findme-section">
+        <div style="align-items: center;text-align: center;">
+          <span style="font-size: 20px;font-weight: 550;margin: 0 5px;font-family: 'Times New Roman', Times, serif;">Find me on </span>
+          <span>
+            <a href="https://www.linkedin.com/in/bodavamshikumar">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/thvvamshi">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/thvvamshi">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="..">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="..">
+              <i class="fa-brands fa-x-twitter"></i></span>
+            </a>
+        </div>
+      </div>
+
   </main>
+   <!-- footer section  -->
   <footer>
-    <div class="footer-section">
-      <p class="footerpara">Copyright ©2024 All rights reserved | This template is made with &#9829; by lvrlib </p>
+    <div style="margin-top: 70px;">
+      <p class="footerpara">Copyright ©2025 All rights reserved | This template is made with &#9829; by Vamshi</p>
     </div>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+
+   <!-- javascript section  -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  <!-- javacsript code here -->
-  <script src="myscript.js"></script>
+  
+   <!-- typing animation -->
   <script>
     var typed = new Typed('#element', {
       strings: ['Web Developer.', 'Web Designer.', 'Software Developer.'],
       typeSpeed: 50,
     });
+  </script> 
+
+  <!-- side menu -->
+  <script>
+    var sidemeu = document.getElementById('sidemenu');
+    function openmenu(){
+      sidemeu.style.right= '0';
+    }
+    function closemenu(){
+      sidemeu.style.right ='-300px';
+    }
   </script>
+
+<!-- form reset  -->
+<!-- <script>
+  function myFunction() {
+    document.getElementsByClassName("myForm").reset();
+  }
+  </script> -->
+
 </body>
 </html>

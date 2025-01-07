@@ -15,30 +15,48 @@ html {
     background-color: black;
     position: absolute;
 }
-
-.navbar-section {
-    padding-left: 20px;
-    width: 92vw;
-    margin: 0 auto;
-}
-
 .anchor {
-    padding-left: 10px;
-    margin-left: auto;
-}
-
-.itemnav {
-    font-weight: 650;
-    text-transform: uppercase;
-    font-style: normal;
-    font-size: 12px;
-    color: white;
-    margin: 2px 2px;
-}
-
-.itemnav:hover {
+    text-decoration: none;
     color: goldenrod;
-    border-bottom: 2px solid rgb(161, 142, 35);
+    font-size: 35px;
+    font-weight: 650;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+    padding: 10px 10px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    text-transform: uppercase;
+    font-family:'Times New Roman', Times, serif;
+}
+nav ul li a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: goldenrod;
+    position: absolute;
+    left: 0%;
+    bottom: -6px;
+    transition: all 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
 }
 
 .leftdown {
@@ -83,10 +101,12 @@ h1 {
     letter-spacing: 3px;
     text-transform: uppercase;
     font-size: 13px;
+    font-weight: 600;
 }
 
-.bodybtn:hover {
-    border: 2px solid rgb(66, 66, 193);
+.frist  {
+    background-color: goldenrod;
+    color: black;
 }
 
 .aboutme-container {
@@ -422,8 +442,8 @@ li {
     color: white;
 }
 
-.sendmsg-container {
-    margin: 30px;
+.sendmsg {
+    margin-top: 99px;
 }
 
 .boxshodow {
@@ -458,7 +478,7 @@ li {
 }
 
 .links-section {
-    margin-top: 70px;
+    margin-top: 130px;
 }
 
 .links-container {
@@ -514,9 +534,23 @@ li {
 }
 
 .footerpara {
-    margin-top: 40px;
+    margin: 90px 0 30px 0;
     font-size: 15px;
     text-align: center;
+}
+nav .fa-solid{
+    display: none  ;
+}
+.findme-section{
+    margin: 90px 0px ;
+}
+.findme-section span a{
+    text-decoration: none;
+    color: rgb(199, 157, 51);
+}
+.findme-section span i{
+    margin: 0 7px;
+    font-size: 23px;
 }
 
 /* Responsive design for large screen */
@@ -665,21 +699,57 @@ li {
 /* Responsive design for mobile screen */
 @media only screen and (max-width: 450px) {
     body{
-        font-size: 14px;
+        font-size: 15px;
     }
-    .menuicon {
-        background-color: white;
-        opacity: 0.8;
+     .anchor{
+         font-size: 55px;
+        margin:10px 30px ;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+     }
+    nav ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
+        color: black;
     }
-
+    nav .fa-solid{
+        display: block;
+        font-size: 40px;
+        font-weight: 700;
+        margin: 40px;
+    }
+    nav ul{
+        background-color: rgb(186, 156, 81);
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        padding-top: 70px;
+        z-index: 2;
+        transition: all 0.5s;
+    }
+    nav ul li{
+         display: block;
+        margin: 40px;
+    }
+    nav ul .fa-solid{ 
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        cursor: pointer;
+        margin: 0;
+        color: black;
+        font-size: 45px;
+    }
     .body-section {
-        margin-top: 100px;
-        max-width: 100%;
-        max-height: max-content;
+        margin-top: 20px;
+        max-width: 100%; 
         }
     .body-section {
         background:url("https://res.cloudinary.com/dedsrw0qv/image/upload/v1734858565/profile_pic-removebg-preview_2_voie2m.png");
-        background-position: 1px;
+        background-position: 5px;
         background-size: 700px;
         background-repeat: no-repeat;
     }
@@ -703,12 +773,7 @@ li {
 
             button {
                 font-size: 18px;
-            }
-
-            button:hover {
-                background-color: rgb(219, 182, 89);
-                border: 2px solid rgb(42, 29, 29);
-                color: black;
+                border: 2px solid goldenrod;
             }
         }
     }
@@ -736,14 +801,6 @@ li {
     .freelences-section{
         display: none;
     }
-
-    /* .freecontainer {
-        background-image: url(https://themewagon.github.io/clark/images/bg_1.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-
-    } */
-
     .freepara {
         font-size: 40px;
         font-weight: 600;;
@@ -775,5 +832,7 @@ li {
         grid-template-columns: repeat(1, 1fr);
     }
 
- 
+    .boxshodow textarea {
+        width: 100%;
+    } 
 }
