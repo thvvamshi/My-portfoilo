@@ -466,7 +466,9 @@ li {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-
+.boxshodow input,textarea {
+    width: 100%;
+} 
 .send-right {
     display: flex;
     flex-direction: row;
