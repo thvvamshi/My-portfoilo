@@ -212,19 +212,19 @@ li {
 }
 
 .para {
-    margin: 25px;
+    margin: 20px;
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
     color: white;
     margin-bottom: 50px;
-    max-width: 70%;
+    max-width: 75%;
 
 }
 
 .resume-grid {
-    margin: 60px;
+    margin: 20px 40px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     flex-wrap: wrap;
 }
@@ -234,8 +234,8 @@ li {
     flex-direction: column;
     background-color: rgb(33, 30, 30);
     border-radius: 10px;
-    padding: 2rem;
-    gap: 1rem;
+    padding: 1rem;
+    gap: 0.2rem;
 }
 
 .resumeyear {
@@ -259,7 +259,46 @@ li {
     font-weight: 700;
     letter-spacing: 3px;
 }
-
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-grid{
+    margin: 20px 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.projectcard{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0.2rem;
+    max-width: 400px;
+}
+.projectimg:hover{
+    transform: scale(1.05);
+}
+.projecttext a{
+    text-decoration: none;
+    color: white;
+}
+.projecttext a:hover{
+    color: goldenrod;
+}
+.projectpara{
+    font-size: 15px;
+    font-weight: 300;
+}
+.projects-grid2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
 .service-container {
     padding: 20px;
 }
@@ -722,6 +761,8 @@ nav .fa-solid{
     .resume-grid,
     .service-grid,
     .blog-grid,
+    .project-grid,
+    .projects-grid2,
     .links-grid{
         grid-template-columns: repeat(1, 1fr);
     }
@@ -869,6 +910,8 @@ nav .fa-solid{
     .resume-grid,
     .service-grid,
     .blog-grid,
+    .project-grid,
+    .projects-grid2,
     .links-grid{
         grid-template-columns: repeat(1, 1fr);
     }
