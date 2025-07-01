@@ -59,7 +59,7 @@
       </div>
     </div>
     <!-- aboutme section  -->
-    <div id="Aboutme" class="Aboutme-section">
+    <div id="Aboutme" class="Aboutme-section animate">
       <div class="aboutme-container">
         <div class="row aboutme1">
           <div class="about-left">
@@ -109,7 +109,7 @@
       </div>
     </div>
     <!-- resume section  -->
-    <div id="resume" class="resume-section">
+    <div id="resume" class="resume-section animate">
       <div class="resume-container">
         <div class="part">
           <h1 class="headh1">Resume</h1>
@@ -157,7 +157,7 @@
       </div>
     </div>
     <!-- project section  -->
-     <div id="projects" class="project-section">
+     <div id="projects" class="project-section animate">
       <div class="projects-container">
         <div class="part">
           <h1 class="headh1">projects</h1>
@@ -221,7 +221,7 @@
      </div>
 
      <!-- service section  -->
-    <div id="service" class="service-section">
+    <div id="service" class="service-section animate">
       <div class="service-container">
         <div class="part">
           <h1 class="headh1">services</h1>
@@ -286,7 +286,7 @@
       </div>
     </div>
      <!-- skils section  -->
-    <div id="skills" class="skill-section">
+    <div id="skills" class="skill-section animate">
       <div class="skill-container">
         <div class="part">
           <h1 class="headh1">My Skills</h1>
@@ -366,7 +366,7 @@
       </div>
     </div>
      <!-- myblogs section  -->
-    <div id="myblog" class="myblog-section">
+    <div id="myblog" class="myblog-section animate">
       <div class="blog-container">
         <div class="part">
           <h1 class="headh1">My Blogs</h1>
@@ -469,7 +469,7 @@
       </div>
     </div>
      <!-- freelences section  -->
-    <div class="freelences-section">
+    <div class="freelences-section animate">
       <div class="freecontainer">
         <div class="freebox">
           <p class="freepara">I'm <span style="color: goldenrod;">Available</span> for freelancing</p>
@@ -482,7 +482,7 @@
       </div>
     </div>
      <!-- contactme section  -->
-    <div id="contact" class="contact-section">
+    <div id="contact" class="contact-section animate">
       <div class="contact-container">
         <div class="part">
           <h1 class="headh1">Contact Me</h1>
@@ -586,7 +586,7 @@
       </div>
     </div>
      <!-- links section  -->
-    <div class="links-section">
+    <div class="links-section animate">
       <div class="links-container">
         <div class="links-grid">
           <!-- grid--1 -->
@@ -664,7 +664,7 @@
       </div>
     </div>
      <!-- find me section  -->
-      <div class="findme-section">
+      <div class="findme-section animate">
         <div style="align-items: center;text-align: center;">
           <span style="font-size: 20px;font-weight: 550;margin: 0 5px;font-family: 'Times New Roman', Times, serif;">Find me on </span>
           <span>
@@ -718,13 +718,37 @@
     }
   </script>
 
-<!-- form reset  -->
- 
-<!-- <script>
-  function myFunction() {
-    document.getElementsByClassName("myForm").reset();
-  }
-  </script> -->
+<script>
+  document.querySelectorAll('.animate').forEach(section => {
+    section.style.opacity = 0;
+    section.style.transform = 'translateY(40px)';
+    section.style.transition = 'opacity 0.7s cubic-bezier(.4,0,.2,1), transform 0.7s cubic-bezier(.4,0,.2,1)';
+});
+
+function revealOnScroll() {
+    const reveals = document.querySelectorAll('.animate');
+    const windowHeight = window.innerHeight;
+    const triggerPoint = 100; // Pixels from bottom to trigger animation
+
+    reveals.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const sectionBottom = section.getBoundingClientRect().bottom;
+
+        if (sectionTop < windowHeight - triggerPoint && sectionBottom > 0) {
+            // Element is in view
+            section.style.opacity = 1;
+            section.style.transform = 'translateY(0)';
+        } else {
+            // Element is out of view, reset styles
+            section.style.opacity = 0;
+            section.style.transform = 'translateY(40px)';
+        }
+    });
+}
+
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('DOMContentLoaded', revealOnScroll);
+</script>
 
 </body>
 </html>
