@@ -638,7 +638,7 @@ nav .fa-solid{
 }
 
 /* Responsive design for tablets screen */
-@media (min-width:460px) and (max-width: 997px) {
+@media (min-width:450px) and (max-width: 997px) {
     body{
         font-size: 16px;
     }
@@ -712,27 +712,22 @@ nav .fa-solid{
         div {
             margin-top: 300px;
 
-            p {
-                font-size: 17px;
+             p {
+                font-size: 23px;
             }
 
             h1,
             span {
-                font-size: 45px;
+                font-size: 50px;
             }
 
             h5 {
-                font-size: 21px;
+                font-size: 25px;
             }
 
             button {
-                font-size: 10px;
-            }
-
-            button:hover {
-                background-color: rgb(219, 182, 89);
-                border: 2px solid rgb(42, 29, 29);
-                color: black;
+                font-size: 18px;
+                border: 2px solid goldenrod;
             }
         }
     }
@@ -848,7 +843,7 @@ nav .fa-solid{
     .box-left {
         text-align: center;
         div {
-            margin-top: 300px;
+            margin-top: 450px;
 
             p {
                 font-size: 23px;
