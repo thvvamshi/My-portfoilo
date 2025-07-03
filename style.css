@@ -12,6 +12,7 @@ html {
     color: white;
     background-color: black;
     position: absolute;
+    max-width: 1400px;
 }
 .anchor {
     text-decoration: none;
@@ -62,10 +63,11 @@ nav ul li a:hover::after{
 }
 
 .bodysection {
-    background: url("https://res.cloudinary.com/dedsrw0qv/image/upload/v1734858565/profile_pic-removebg-preview_2_voie2m.png");
+    
+    background: url("https://res.cloudinary.com/dedsrw0qv/image/upload/v1751550015/image-2_yoijeb.jpg");
     background-repeat: no-repeat;
-    background-size: 500px;
-    background-position: 650px;
+    background-size: 380px;
+    background-position: 720px;
     height: 90vh;
 }
 
@@ -73,7 +75,7 @@ nav ul li a:hover::after{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 200px;
+    padding-left: 180px;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -108,35 +110,38 @@ h1 {
 }
 
 .aboutme-container {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: grid; */
+    /* grid-template-columns: repeat(2, 1fr); */
 }
 
-.aboutme1 {
+/* .aboutme1 {
     display: flex;
     flex-direction: row;
     margin-top: 70px;
     flex-wrap: wrap;
-}
-
+} */
+/* 
 .about-left {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+} */
 
-.image2 {
+/* .image2 {
     height: 50vh;
     width: 25vw;
     margin-top: 3rem;
     margin-left: 4rem;
-}
+} */
 
 .about-right {
-    width: 49vw;
-    display: flex;
+    /* width: 49vw; */
+    /* display: flex; */
     flex-direction: column;
 }
 
@@ -194,7 +199,7 @@ li {
 }
 
 .resume-container {
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 20px;
 }
 
@@ -222,7 +227,7 @@ li {
 }
 
 .resume-grid {
-    margin: 20px 40px;
+    margin: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
@@ -245,7 +250,7 @@ li {
 }
 
 .resumecv {
-    margin: 30px;
+    margin: 20px;
     padding: 30px;
     text-align: center;
 }
@@ -404,7 +409,7 @@ li {
 }
 
 .freelences-section {
-    margin-top: 170px;
+    margin-top: 130px;
     height: 110vh;
     width: 100vw;
     display: flex;
@@ -679,7 +684,7 @@ nav .fa-solid{
        font-size: 45px;
    }
     .body-section {
-        margin-top: 90px;
+        margin-top: 10px;
     }
 
     .menuicon {
@@ -693,16 +698,19 @@ nav .fa-solid{
     }
 
     .bodysection {
-        background: url("https://res.cloudinary.com/dedsrw0qv/image/upload/v1728713969/profile_pic-removebg-preview_jt73te.png");
+        background:url("https://res.cloudinary.com/dedsrw0qv/image/upload/v1751550015/image-2_yoijeb.jpg");
         background-repeat: no-repeat;
-        background-position: 160px;
+        background-position: center;
+        height: 100vh;
+        width: 100vw;
+        background-size: contain;
     }
 
     .box-left {
-        text-align: center;
+        /* text-align: center; */
 
         div {
-            margin-top: 330px;
+            margin-top: 300px;
 
             p {
                 font-size: 17px;
@@ -735,7 +743,7 @@ nav .fa-solid{
 
 
     .aboutme-container {
-        margin-top: 150px;
+        margin-top: 100px;
     }
 
     .details-info p {
@@ -781,10 +789,10 @@ nav .fa-solid{
 /* Responsive design for mobile screen */
 @media only screen and (max-width: 450px) {
     body{
-        font-size: 15px;
+        font-size: 14px;
     }
      .anchor{
-         font-size: 55px;
+        font-size: 55px;
         margin:10px 30px ;
         font-family: Georgia, 'Times New Roman', Times, serif;
      }
@@ -826,13 +834,14 @@ nav .fa-solid{
         font-size: 45px;
     }
     .body-section {
-        margin-top: 20px;
+        margin-top: 50px;
         max-width: 100%; 
         }
     .body-section {
-        background:url("https://res.cloudinary.com/dedsrw0qv/image/upload/v1734858565/profile_pic-removebg-preview_2_voie2m.png");
-        background-position: 5px;
-        background-size: 700px;
+        background:url("https://res.cloudinary.com/dedsrw0qv/image/upload/v1751550015/image-2_yoijeb.jpg");
+        background-position: center;
+        background-size: 380px;
+        height: 100vh;
         background-repeat: no-repeat;
     }
     .box-left {
@@ -841,16 +850,16 @@ nav .fa-solid{
             margin-top: 300px;
 
             p {
-                font-size: 25px;
+                font-size: 23px;
             }
 
             h1,
             span {
-                font-size: 55px;
+                font-size: 50px;
             }
 
             h5 {
-                font-size: 30px;
+                font-size: 25px;
             }
 
             button {
