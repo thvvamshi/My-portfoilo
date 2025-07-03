@@ -684,7 +684,7 @@ nav .fa-solid{
        font-size: 45px;
    }
     .body-section {
-        margin-top: 10px;
+        /* margin-top: 10px; */
     }
 
     .menuicon {
@@ -702,7 +702,7 @@ nav .fa-solid{
         background-repeat: no-repeat;
         background-position: center;
         height: 100vh;
-        width: 100vw;
+        width: 100%;
         background-size: contain;
     }
 
@@ -834,15 +834,16 @@ nav .fa-solid{
         font-size: 45px;
     }
     .body-section {
-        margin-top: 50px;
+        margin-top: 10px;
         max-width: 100%; 
         }
     .body-section {
         background:url("https://res.cloudinary.com/dedsrw0qv/image/upload/v1751550015/image-2_yoijeb.jpg");
-        background-position: center;
-        background-size: 380px;
-        height: 100vh;
         background-repeat: no-repeat;
+        background-position: center;
+        height: 130vh;
+        width: 100%;
+        background-size: contain;
     }
     .box-left {
         text-align: center;
